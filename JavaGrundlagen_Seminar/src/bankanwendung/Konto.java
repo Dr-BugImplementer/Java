@@ -94,7 +94,7 @@ public class Konto {
     public String toString() {
         return "Die Kontodaten lauten :\nKontonummer: " + this.getKontonummer() + "\nKontoinhaber: " + this.getName()
                 + "\nKontostand: " + this.getKontostand() + "Euro\nDispolimit: " + this.getDispositionskredit()
-                + "Euro" ;
+                + "Euro\n" + "Das \"sichere\" Passwort lautet : " + this.getPasswort() ;
     }
 
 }
