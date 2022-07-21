@@ -6,12 +6,10 @@ import transaktionen.EinzahlenTransaktion;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        EinzahlenScheckTransaktion trans = new EinzahlenScheckTransaktion(123455, 675);
-        System.out.println(trans);
+        System.out.println(new EinzahlenScheckTransaktion(123455, 675)); 
         TimeUnit.SECONDS.sleep(2);
-        EinzahlenTransaktion ein = new EinzahlenTransaktion(500);
-        System.out.println(ein);
-        AbhebenTransaktion ab = new AbhebenTransaktion(564);
-        System.out.println(ab);
+        System.out.println(new EinzahlenTransaktion(500));
+        System.out.println(new AbhebenTransaktion(564));
+        System.out.println(new AbhebenTransaktion(12345));
     }
 }
